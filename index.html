@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/main.css" type="text/css" />
+    <style>
+
+    </style>
+</head>
+
+<body onscroll="c2animate()">
+
+    <div class="content" id="content">
+        <div class="container-1 containers">
+            <div class="container-1__gradient">
+                <div id="nav-name">
+                    <h2>SiDhU SaNKaR</h2>
+                </div>
+                <header>
+                    <nav class="navbar">
+                        <h4 class="navbar__head">Yoo!.. Click me &nbsp;<i class="ri-subtract-line"></i><i
+                                class="ri-subtract-line"></i><i class="ri-arrow-right-fill navbar__head__icon"></i></h4>
+                        <button onclick="changeIcon()">
+                            <i class="ri-menu-line navbar__menu" id="navbar_menu"></i>
+                        </button>
+                    </nav>
+                </header>
+
+                <div class="homepage-info">
+
+                    <div class="homepage-info__heythere">
+                        <p>Hey There ........</p>
+                    </div>
+                    <div class="homepage-info__cometo">
+                        <p>.........You've come to </p>
+                    </div>
+                </div>
+                <div class="homepage-name">
+                    <div class="homepage-name__rel">
+                        <h1 class="homepage-name__rel-head-1">SIDHARTT</h1>
+                        <h1 class="homepage-name__rel-head-2">SANKAR</h1>
+                    </div>
+                </div>
+                <div class="homepage-clickbelow">
+                    <button onmouseleave="changeanimate()" id="c1-btn" onclick="scrolldown()"
+                        class="homepage-clickbelow__btn"><i
+                            class="ri-arrow-drop-down-line homepage-clickbelow__icon"></i></button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container-2 containers">
+            <div class="container-2__content">
+                <div class="tempMessage">
+                    <h4 class="tempMessage__h4" id="c2-h4tag">Oh it seems</h4>
+                    <h2 class="tempMessage__h2" id="c2-h2tag">You wanna visit my</h2>
+                    <h1 class="tempMessage__h1">PORTFOLIO</h1>
+                </div>
+                <div class="top-grid" id="top-grid">
+                    <div class="education">
+                        <h2 class="top-grid__heading">Education</h2>
+                        <div class="education__options" onclick="styleback()">
+                            <a onclick="schoolChange()" id="school">
+                                <p class="top-grid__btns">School</p>
+                            </a>
+                            <a onclick="collegeChange()" id="college">
+                                <p class="top-grid__btns">College</p>
+                            </a>
+                        </div>
+                        <div class="education__content">
+                            <div id="education-change">
+                                <h4 id="ec-h41" class="top-grid__content-margin top-grid__content-details-head"></h4>
+                                <h6 id="ec-p1" class=" top-grid__content-details-p"></h6>
+                                <h4 id="ec-h42" class=" top-grid__content-details-head"></h4>
+                                <h6 id="ec-p2" class="top-grid__content-details-p"></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <h2 class="top-grid__heading">Skills</h2>
+                        <div class="skills__options">
+                            <a onclick="plChange()" id="pl">
+                                <p class="top-grid__btns">Programming-languages</p>
+                            </a>
+                            <a onclick="feChange()" id="fe">
+                                <p class="top-grid__btns">FrontEnd</p>
+                            </a>
+                            <a onclick="beChange()" id="be">
+                                <p class="top-grid__btns">BackEnd</p>
+                            </a>
+                        </div>
+                        <div class="skills__content">
+                            <div id="skills-change">
+                                <h4 id="sc-p1" class="top-grid__content-margin top-grid__content-details-head"></h4>
+                                <h4 id="sc-p2" class=" top-grid__content-details-head"></h4>
+                                <h4 id="sc-p3" class=" top-grid__content-details-head"></h4>
+                                <h4 id="sc-p4" class=" top-grid__content-details-head"></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience">
+                        <h2 class="top-grid__heading">Experience</h2>
+                        <div class="experience__options">
+                            <a onclick="clgChange()" id="clg">
+                                <p class="top-grid__btns">College-Experience</p>
+                            </a>
+                            <a onclick="wrkChange()" id="wrk">
+                                <p class="top-grid__btns">Work-Experience</p>
+                            </a>
+                        </div>
+                        <div class="exp__content">
+                            <div id="exp-change">
+                                <h4 id="exc-h1" class="top-grid__content-margin top-grid__content-details-head"></h4>
+                                <h6 id="exc-p1" class=" top-grid__content-details-head"></h6>
+                                <h4 id="exc-h2" class=" top-grid__content-details-head"></h4>
+                                <h6 id="exc-p2" class=" top-grid__content-details-head"></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-grid-icon" id="top-grid-icon">
+                    <a onclick="viewTopGrid()"><i class="ri-add-circle-line top-btn-icon"></i></a>
+                    <p>Click here to view details</p>
+                </div>
+                <div class="container-2__clickbelow">
+                    <button onmouseleave="changeanimate()" id="c1-btn" onclick="scrolldown()"
+                        class="container-2__clickbelow-btn"><i
+                            class="ri-arrow-drop-down-line container-2__clickbelow-icon"></i></button>
+                </div>
+                <div class="closePortScreen" onclick="closePortDetails()">
+                    <a class="closePortScreen__icon" id="closePortScreen-icon"><i class="ri-close-fill"></i></a>
+                    <p class="closePortScreen__ptag">Close Details</p>
+                </div>
+                <p id="demo" style="color:black"></p>
+            </div>
+        </div>
+    </div>
+    <button id="topScrollBtn" onclick="scrollToTop()"><i class="ri-arrow-up-s-fill"></i></button>
+    <p id="demo1" style="color:black;"></p>
+    <script>
+        function scrollToTop() {
+            var scrollValue = document.documentElement.pageYOffset;
+            window.scrollBy({
+                top: -scrollValue,
+                left: 0,
+                behavior: "smooth",
+            })
+        }
+
+        function closePortDetails() {
+            document.getElementById("top-grid-icon").style.display = "block";
+            document.getElementById("top-grid").style.animationName = "animate25";
+            document.getElementById("top-grid").style.animationDuration = ".5s";
+            document.getElementById("top-grid-icon").style.visibility = "visible";
+            document.getElementById("top-grid-icon").style.animationName = "animate26";
+            document.getElementById("top-grid-icon").style.animationDuration = ".5s";
+            document.getElementById("top-grid-icon").style.animationDelay = ".25s";
+        }
+        function viewTopGrid() {
+            document.getElementById("top-grid").style.visibility = "visible";
+            document.getElementById("top-grid").style.animationName = "animate23";
+            document.getElementById("top-grid-icon").style.display = "none";
+
+        }
+
+        function clgChange() {
+            var child = document.getElementById("clg").children[0].innerText;
+            // document.getElementById("demo").innerHTML = child;
+            if (child == "College-Experience") {
+                document.getElementById("clg").style.background = "linear-gradient(45deg, rgba(255, 255, 255, 0.615), rgba(0, 0, 0, 0.62))";
+                document.getElementById("clg").style.borderTopRightRadius = "10px";
+                document.getElementById("clg").style.paddingRight = "5px";
+                document.getElementById("wrk").style.background = "";
+            } else {
+                document.getElementById("clg").style.background = "";
+                document.getElementById("wrk").style.background = "";
+            }
+            document.getElementById("exc-h1").innerText = "2020-2021";
+            document.getElementById("exc-p1").innerText = "Support for building department official website";
+            document.getElementById("exc-h2").innerText = "2021-2023";
+            document.getElementById("exc-p2").innerHTML = "Toll sensor using RFID Sensor | Battery monitoring system using WIFI and GSM module";
+        }
+        function wrkChange() {
+            var child = document.getElementById("wrk").children[0].innerText;
+            // document.getElementById("demo").innerHTML = child;
+            if (child == "Work-Experience") {
+                document.getElementById("wrk").style.background = "linear-gradient(45deg, rgba(255, 255, 255, 0.615), rgba(0, 0, 0, 0.62))";
+                document.getElementById("wrk").style.borderTopRightRadius = "10px";
+                document.getElementById("wrk").style.paddingRight = "5px";
+                document.getElementById("clg").style.background = "";
+            } else {
+                document.getElementById("clg").style.background = "";
+                document.getElementById("wrk").style.background = "";
+            }
+            document.getElementById("exc-h1").innerText = "2022-2023";
+            document.getElementById("exc-p1").innerHTML = "Working in 'Mphasis Private limited' as a software Developer<br/>Worked as backend engineer and frontend engineer with client 'Apollo global management'";
+            document.getElementById("exc-h2").innerText = "";
+            document.getElementById("exc-p2").innerHTML = "";
+        }
+
+
+        function beChange() {
+            var child = document.getElementById("be").children[0].innerText;
+            // document.getElementById("demo").innerHTML = child;
+            if (child == "BackEnd") {
+                document.getElementById("be").style.background = "linear-gradient(45deg, rgba(255, 255, 255, 0.615), rgba(0, 0, 0, 0.62))";
+                document.getElementById("be").style.borderTopRightRadius = "10px";
+                document.getElementById("be").style.paddingRight = "5px";
+                document.getElementById("fe").style.background = "";
+                document.getElementById("pl").style.background = "";
+            } else {
+                document.getElementById("fe").style.background = "";
+                document.getElementById("be").style.background = "";
+                document.getElementById("pl").style.background = "";
+            }
+            document.getElementById("sc-p1").innerText = "NODE JS";
+            document.getElementById("sc-p2").innerText = "EXPRESS JS";
+            document.getElementById("sc-p3").innerText = "MONGO DB(NoSQL) | ORACLE,MySQL(SQL)";
+            document.getElementById("sc-p4").innerText = "SPRINGBOOT";
+        }
+        function feChange() {
+            var child = document.getElementById("fe").children[0].innerText;
+            // document.getElementById("demo").innerHTML = child;
+            if (child == "FrontEnd") {
+                document.getElementById("fe").style.background = "linear-gradient(45deg, rgba(255, 255, 255, 0.615), rgba(0, 0, 0, 0.62))";
+                document.getElementById("fe").style.borderTopRightRadius = "10px";
+                document.getElementById("fe").style.paddingRight = "5px";
+                document.getElementById("be").style.background = "";
+                document.getElementById("pl").style.background = "";
+            } else {
+                document.getElementById("fe").style.background = "";
+                document.getElementById("be").style.background = "";
+                document.getElementById("pl").style.background = "";
+            }
+            document.getElementById("sc-p1").innerText = "HTML | CSS | SASS | BEM_CSS";
+            document.getElementById("sc-p2").innerText = "React JS";
+            document.getElementById("sc-p3").innerText = "";
+            document.getElementById("sc-p4").innerText = "";
+        }
+
+        function plChange() {
+            var child = document.getElementById("pl").children[0].innerText;
+            // document.getElementById("demo").innerHTML = child;
+            if (child == "Programming-languages") {
+                document.getElementById("pl").style.background = "linear-gradient(45deg, rgba(255, 255, 255, 0.615), rgba(0, 0, 0, 0.62))";
+                document.getElementById("pl").style.borderTopRightRadius = "10px";
+                document.getElementById("pl").style.paddingRight = "5px";
+                document.getElementById("be").style.background = "";
+                document.getElementById("fe").style.background = "";
+            } else {
+                document.getElementById("fe").style.background = "";
+                document.getElementById("be").style.background = "";
+                document.getElementById("pl").style.background = "";
+            }
+            document.getElementById("sc-p1").innerText = "JAVA";
+            document.getElementById("sc-p2").innerText = "JAVASCRIPT";
+            document.getElementById("sc-p3").innerText = "";
+            document.getElementById("sc-p4").innerText = "";
+        }
+
+
+        let schcount = 0;
+        let clgcount = 0;
+        function schoolChange() {
+            var child = document.getElementById("school").children[0].innerText;
+            // document.getElementById("demo").innerHTML = child;
+            if (child == "School") {
+                document.getElementById("school").style.background = "linear-gradient(45deg, rgba(255, 255, 255, 0.615), rgba(0, 0, 0, 0.62))";
+                document.getElementById("school").style.borderTopRightRadius = "10px";
+                document.getElementById("school").style.paddingRight = "5px";
+                document.getElementById("college").style.background = "";
+            } else {
+                document.getElementById("school").style.background = "";
+                document.getElementById("college").style.background = "";
+            }
+            schcount++;
+            document.getElementById("ec-h41").innerText = "SSLC - State Board Of Tamilnadu";
+            document.getElementById("ec-p1").innerText = "Percentage : 99.4%";
+            document.getElementById("ec-h42").innerText = "HSC - State Board of Tamilnadu";
+            document.getElementById("ec-p2").innerText = "Percentage : 95.08%";
+        }
+
+        function collegeChange() {
+            clgcount++;
+            var child = document.getElementById("college").children[0].innerText;
+            // document.getElementById("demo").innerHTML = child;
+            if (child == "College") {
+                document.getElementById("college").style.background = "linear-gradient(45deg, rgba(255, 255, 255, 0.615), rgba(0, 0, 0, 0.62))";
+                document.getElementById("college").style.borderTopRightRadius = "10px";
+                document.getElementById("college").style.paddingRight = "5px";
+                document.getElementById("school").style.background = "";
+            } else {
+                document.getElementById("college").style.background = "";
+                document.getElementById("school").style.background = "";
+            }
+            // // var child = document.getElementById("education-change    ").children[1].tagName;
+            // // document.getElementById("demo").innerHTML = child;
+            // if (clgcount <= 1) {
+            //     var div = document.getElementById("education-change");
+            //     for (let i = 1; i <= 2; i++) {
+            //         if (i === 1) {
+            //             var h4 = document.createElement("h4");
+            //             var p = document.createElement("p");
+            //             h4.innerHTML = "B.E(EEE) - College Of Engineering,Guindy(Anna University)";
+            //             p.innerHTML = "CGPA : 7.71";
+            //         }
+            //         div.appendChild(h4);
+            //         div.appendChild(p);
+            //     }
+            // }
+            document.getElementById("ec-h41").innerText = "B.E(EEE) - College Of Engineering,Guindy(Anna University)";
+            document.getElementById("ec-p1").innerText = "CGPA : 7.71";
+            document.getElementById("ec-h42").innerText = "";
+            document.getElementById("ec-p2").innerText = "";
+        }
+
+
+
+        function changeIcon() {
+            document.getElementById("navbar_menu").className = "ri-menu-unfold-fill";
+        }
+        function scrolldown() {
+            document.documentElement.scrollBy(
+                {
+                    top: window.innerHeight,
+                    left: 0,
+                    behavior: "smooth"
+                }
+            );
+            document.getElementById("c2-h4tag").style.animationName = "animate21";
+            document.getElementById("top-grid-icon").style.animationName = "animate24";
+
+        }
+        var c1btn = document.getElementById("c1-btn");
+        c1btn.addEventListener("click", function () {
+            document.getElementById("c2-h4tag").style.animationName = "animate21";
+            document.getElementById("c2-h2tag").style.animationName = "animate22";
+        })
+
+        function c2animate() {
+            if (window.scrollY > 20) {
+                document.getElementById("c2-h4tag").style.animationName = "animate21";
+                document.getElementById("c2-h2tag").style.animationName = "animate22";
+                document.getElementById("top-grid-icon").style.animationName = "animate24";
+
+            }
+        }
+
+
+
+    </script>
+</body>
+
+</html>

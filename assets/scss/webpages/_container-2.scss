@@ -1,0 +1,433 @@
+.container-2 {
+    height: 100vh;
+    width: 100%;
+    background-image: url("https://64.media.tumblr.com/faab1d6487383e9ddae6a5fd5b1c6480/20de4f6598838da5-06/s500x750/882051acd8dabb17ff931a36ee894c5ad2bd6f1d.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+
+
+    &__content {
+        background: linear-gradient(180deg, rgba(174, 150, 150, 0.908), rgba(26, 26, 26, 0.604));
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+}
+
+.tempMessage {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    &__h4 {
+        position: absolute;
+        top: 30%;
+        left: 44%;
+        font-size: 2rem;
+        animation-duration: 3s;
+        animation-direction: normal;
+        animation-fill-mode: both;
+        animation-timing-function: ease;
+
+    }
+
+    &__h2 {
+        position: absolute;
+        top: 39%;
+        left: 36%;
+        font-size: 3rem;
+        animation-duration: 3s;
+        animation-direction: normal;
+        animation-fill-mode: both;
+        animation-timing-function: ease;
+
+    }
+
+    &__h1 {
+        position: absolute;
+        top: 69%;
+        left: 28%;
+        font-size: $banner-size + 4rem;
+        color: white;
+    }
+}
+
+@keyframes animate21 {
+    0% {
+        opacity: 0%;
+    }
+
+    30% {
+        opacity: 100%
+    }
+
+    80% {
+        opacity: 100%
+    }
+
+    100% {
+        opacity: 0%;
+        display: none;
+
+    }
+}
+
+@keyframes animate22 {
+    0% {
+        opacity: 0%;
+    }
+
+    30% {
+        opacity: 100%
+    }
+
+    80% {
+        opacity: 100%
+    }
+
+    100% {
+        opacity: 0%;
+        display: none;
+
+    }
+}
+
+.top-grid-icon {
+    position: absolute;
+    top: 30%;
+    left: 40.7%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    // animation-name: animate24;
+    animation-delay: 2s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    visibility: hidden;
+
+    a {
+        display: flex;
+        justify-content: center;
+        font-size: $p-size + 60px;
+        cursor: pointer;
+        padding-bottom: 0;
+
+        i {
+            color: rgba(0, 0, 0, 0.703);
+            margin-right: 1.5%;
+        }
+    }
+
+    p {
+        font-size: $p-size;
+    }
+}
+
+@keyframes animate24 {
+    0% {
+        opacity: 0%;
+
+    }
+
+    50% {
+        opacity: 0%;
+
+    }
+
+    100% {
+        opacity: 100%;
+        visibility: visible;
+    }
+}
+
+.top-grid {
+    visibility: hidden;
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.8fr 1fr 1fr;
+    height: 50%;
+    padding: 0% 0% 0% 2%;
+    gap: 10px;
+    // animation-name: animate23;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: ease;
+    color: white;
+    // background: linear-gradient(45deg, rgba(0, 0, 0, 0.3), rgba(133, 130, 130, 0.212) 58%, rgba(0, 0, 0, 0.246));
+    border-radius: 10px;
+    // box-shadow: inset 0 0 90px 2px rgba(0, 0, 0, 0.389), 0 0 10px 2px rgba(0, 0, 0, 0.448);
+
+    &__content-details-head {
+        font-size: $p-size - 5px;
+        color: white;
+        margin-bottom: 1%;
+    }
+
+    &__content-details-p {
+        color: white;
+        margin-bottom: 4%;
+        font-size: $p-size - 5px;
+    }
+
+    &__content-margin {
+        margin-top: 30px;
+    }
+
+    &__heading {
+        font-size: 50px;
+        color: white;
+        transition-property: border-bottom;
+        transition-duration: 0.25s;
+        transition-timing-function: ease-in-out;
+    }
+
+
+
+    &__btns {
+        font-size: 30px;
+    }
+
+    .education {
+        display: flex;
+        flex-direction: column;
+
+
+        &__options {
+            margin-top: .8rem;
+            display: flex;
+            gap: 1rem;
+
+            a {
+                cursor: pointer;
+
+                p {
+                    border-left-width: 5px;
+                    border-left-style: solid;
+                    border-left-color: rgba(0, 0, 0, 0.622);
+                    font-size: $p-size - 4px;
+                    padding-left: 3px;
+                    font-weight: $medium-weight;
+                }
+            }
+
+            a:hover {
+                background: linear-gradient(45deg, rgba(255, 255, 255, 0.615), rgba(0, 0, 0, 0.62));
+                border-top-right-radius: 10px;
+                padding-right: 5px;
+            }
+
+        }
+
+        &__content {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+        margin-right: 5%;
+        margin-left: 5%;
+
+        &__options {
+            margin-top: .8rem;
+            display: flex;
+            justify-content: space-between;
+
+            a {
+                cursor: pointer;
+
+                p {
+                    border-left-width: 5px;
+                    border-left-style: solid;
+                    border-left-color: rgba(0, 0, 0, 0.622);
+                    font-size: $p-size - 4px;
+                    padding-left: 3px;
+                    font-weight: $medium-weight;
+                }
+            }
+
+            a:hover {
+                background: linear-gradient(45deg, rgba(255, 255, 255, 0.615), rgba(0, 0, 0, 0.62));
+                border-top-right-radius: 10px;
+                padding-right: 5px;
+            }
+
+        }
+    }
+
+    .experience {
+
+        display: flex;
+        flex-direction: column;
+        margin-left: 9%;
+
+        &__options {
+            margin-top: .8rem;
+            display: flex;
+            gap: 1rem;
+
+            a {
+                cursor: pointer;
+
+                p {
+                    border-left-width: 5px;
+                    border-left-style: solid;
+                    border-left-color: rgba(0, 0, 0, 0.622);
+                    font-size: $p-size - 4px;
+                    padding-left: 3px;
+                    font-weight: $medium-weight;
+                }
+            }
+
+            a:hover {
+                background: linear-gradient(45deg, rgba(255, 255, 255, 0.615), rgba(0, 0, 0, 0.62));
+                border-top-right-radius: 10px;
+                padding-right: 5px;
+            }
+        }
+    }
+
+}
+
+#exp-change {
+    h4 {
+        font-size: $p-size;
+        font-weight: $bold-weight;
+        margin-bottom: 1%;
+        margin-top: 25px;
+    }
+
+    h6 {
+        font-weight: $medium-weight;
+        margin-bottom: 3%;
+    }
+}
+
+#skills-change {
+    h4 {
+        font-size: $p-size - 4px;
+        font-weight: $bold-weight;
+        margin-bottom: 1%;
+    }
+
+    h6 {
+        font-weight: $medium-weight;
+        margin-bottom: 3%;
+    }
+}
+
+#education-change {
+    h4 {
+        font-size: $p-size;
+        font-weight: $bold-weight;
+        margin-bottom: 1%;
+    }
+
+    h6 {
+        font-weight: $medium-weight;
+        margin-bottom: 3%;
+    }
+}
+
+@keyframes animate23 {
+    from {
+        opacity: 20%;
+        visibility: hidden;
+    }
+
+    to {
+        opacity: 100%;
+        visibility: visible;
+    }
+}
+
+
+.container-2__clickbelow {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    padding: 20px 7% 20px 7%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    &-icon {
+        font-size: $p-size;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.291);
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    &-icon:hover {
+        transform: scale(1.1);
+    }
+
+    &-btn {
+        background-color: transparent;
+        border: none
+    }
+
+}
+
+.closePortScreen {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.3rem;
+
+    a {
+        cursor: pointer;
+        transition-property: all;
+        transition-duration: .5s;
+        transition-timing-function: ease;
+
+        i {
+            color: black;
+            font-weight: $bold-weight;
+        }
+    }
+
+    p {
+        color: black;
+    }
+}
+
+.closePortScreen:hover a {
+    transform: rotate(90deg);
+}
+
+.closePortScreen:hover {
+    cursor: pointer;
+}
+
+@keyframes animate25 {
+    0% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+}
+
+@keyframes animate26 {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
